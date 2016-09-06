@@ -7,34 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10773D1A237B42E21621BA2C /* Pods_BillOrSteveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815491CAEDD86BCF63DE544B /* Pods_BillOrSteveTests.framework */; };
 		420C9667B9BFC2A2F54AE083 /* Pods_BillOrSteve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989B91428DBF74DE1EEBC467 /* Pods_BillOrSteve.framework */; };
 		5B9D1B971D08603800522058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1B961D08603800522058 /* AppDelegate.swift */; };
 		5B9D1B991D08603800522058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1B981D08603800522058 /* ViewController.swift */; };
 		5B9D1B9C1D08603800522058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1B9A1D08603800522058 /* Main.storyboard */; };
 		5B9D1B9E1D08603800522058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1B9D1D08603800522058 /* Assets.xcassets */; };
 		5B9D1BA11D08603800522058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1B9F1D08603800522058 /* LaunchScreen.storyboard */; };
-		5B9D1BAC1D08603800522058 /* BillOrSteveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1BAB1D08603800522058 /* BillOrSteveTests.swift */; };
-		5B9D1BB71D08603800522058 /* BillOrSteveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1BB61D08603800522058 /* BillOrSteveUITests.swift */; };
-		F7F0A3F79D6D78E85D038C57 /* Pods_BillOrSteveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC71DEE53190580DFB32CE51 /* Pods_BillOrSteveUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B9D1BA81D08603800522058 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B9D1B8B1D08603700522058 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B9D1B921D08603800522058;
-			remoteInfo = BillOrSteve;
-		};
-		5B9D1BB31D08603800522058 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B9D1B8B1D08603700522058 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B9D1B921D08603800522058;
-			remoteInfo = BillOrSteve;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		148EC2074D65609229DF176B /* Pods-BillOrSteve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteve.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,19 +24,9 @@
 		5B9D1B9D1D08603800522058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9D1BA01D08603800522058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B9D1BA21D08603800522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B9D1BA71D08603800522058 /* BillOrSteveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillOrSteveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B9D1BAB1D08603800522058 /* BillOrSteveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillOrSteveTests.swift; sourceTree = "<group>"; };
-		5B9D1BAD1D08603800522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B9D1BB21D08603800522058 /* BillOrSteveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillOrSteveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B9D1BB61D08603800522058 /* BillOrSteveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillOrSteveUITests.swift; sourceTree = "<group>"; };
-		5B9D1BB81D08603800522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		600098413AF96B24C5D40395 /* Pods-BillOrSteveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteveTests/Pods-BillOrSteveTests.debug.xcconfig"; sourceTree = "<group>"; };
-		674CEF2507BC655C4E2DE9AD /* Pods-BillOrSteveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteveUITests/Pods-BillOrSteveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		69352740539C06E694684607 /* Pods-BillOrSteve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve.debug.xcconfig"; sourceTree = "<group>"; };
 		815491CAEDD86BCF63DE544B /* Pods_BillOrSteveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8967D3ED74906ACA5A191DEC /* Pods-BillOrSteveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteveUITests/Pods-BillOrSteveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		989B91428DBF74DE1EEBC467 /* Pods_BillOrSteve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4F4947EE0885C6640C1FE72 /* Pods-BillOrSteveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteveTests/Pods-BillOrSteveTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC71DEE53190580DFB32CE51 /* Pods_BillOrSteveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,22 +39,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B9D1BA41D08603800522058 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10773D1A237B42E21621BA2C /* Pods_BillOrSteveTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B9D1BAF1D08603800522058 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7F0A3F79D6D78E85D038C57 /* Pods_BillOrSteveUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				5B9D1B951D08603800522058 /* BillOrSteve */,
-				5B9D1BAA1D08603800522058 /* BillOrSteveTests */,
-				5B9D1BB51D08603800522058 /* BillOrSteveUITests */,
 				5B9D1B941D08603800522058 /* Products */,
 				77E2848B1AEE2BAD66147F60 /* Pods */,
 				8AF31A81B86B907536D23584 /* Frameworks */,
@@ -105,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				5B9D1B931D08603800522058 /* BillOrSteve.app */,
-				5B9D1BA71D08603800522058 /* BillOrSteveTests.xctest */,
-				5B9D1BB21D08603800522058 /* BillOrSteveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,33 +73,11 @@
 			path = BillOrSteve;
 			sourceTree = "<group>";
 		};
-		5B9D1BAA1D08603800522058 /* BillOrSteveTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B9D1BAB1D08603800522058 /* BillOrSteveTests.swift */,
-				5B9D1BAD1D08603800522058 /* Info.plist */,
-			);
-			path = BillOrSteveTests;
-			sourceTree = "<group>";
-		};
-		5B9D1BB51D08603800522058 /* BillOrSteveUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5B9D1BB61D08603800522058 /* BillOrSteveUITests.swift */,
-				5B9D1BB81D08603800522058 /* Info.plist */,
-			);
-			path = BillOrSteveUITests;
-			sourceTree = "<group>";
-		};
 		77E2848B1AEE2BAD66147F60 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				69352740539C06E694684607 /* Pods-BillOrSteve.debug.xcconfig */,
 				148EC2074D65609229DF176B /* Pods-BillOrSteve.release.xcconfig */,
-				600098413AF96B24C5D40395 /* Pods-BillOrSteveTests.debug.xcconfig */,
-				E4F4947EE0885C6640C1FE72 /* Pods-BillOrSteveTests.release.xcconfig */,
-				8967D3ED74906ACA5A191DEC /* Pods-BillOrSteveUITests.debug.xcconfig */,
-				674CEF2507BC655C4E2DE9AD /* Pods-BillOrSteveUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -188,47 +115,6 @@
 			productReference = 5B9D1B931D08603800522058 /* BillOrSteve.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B9D1BA61D08603800522058 /* BillOrSteveTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B9D1BBE1D08603800522058 /* Build configuration list for PBXNativeTarget "BillOrSteveTests" */;
-			buildPhases = (
-				C0FFE01ED911EC2666B2B506 /* [CP] Check Pods Manifest.lock */,
-				5B9D1BA31D08603800522058 /* Sources */,
-				5B9D1BA41D08603800522058 /* Frameworks */,
-				5B9D1BA51D08603800522058 /* Resources */,
-				CAA1219639288EA1DBF905DD /* [CP] Embed Pods Frameworks */,
-				E41EE1550351015F8009E48F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B9D1BA91D08603800522058 /* PBXTargetDependency */,
-			);
-			name = BillOrSteveTests;
-			productName = BillOrSteveTests;
-			productReference = 5B9D1BA71D08603800522058 /* BillOrSteveTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5B9D1BB11D08603800522058 /* BillOrSteveUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B9D1BC11D08603800522058 /* Build configuration list for PBXNativeTarget "BillOrSteveUITests" */;
-			buildPhases = (
-				F9E7EFC447FE1CA693674AFF /* [CP] Check Pods Manifest.lock */,
-				5B9D1BAE1D08603800522058 /* Sources */,
-				5B9D1BAF1D08603800522058 /* Frameworks */,
-				5B9D1BB01D08603800522058 /* Resources */,
-				C45D0DBBBE72DCF1A6DEB596 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B9D1BB41D08603800522058 /* PBXTargetDependency */,
-			);
-			name = BillOrSteveUITests;
-			productName = BillOrSteveUITests;
-			productReference = 5B9D1BB21D08603800522058 /* BillOrSteveUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,14 +127,6 @@
 				TargetAttributes = {
 					5B9D1B921D08603800522058 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					5B9D1BA61D08603800522058 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 5B9D1B921D08603800522058;
-					};
-					5B9D1BB11D08603800522058 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 5B9D1B921D08603800522058;
 					};
 				};
 			};
@@ -266,8 +144,6 @@
 			projectRoot = "";
 			targets = (
 				5B9D1B921D08603800522058 /* BillOrSteve */,
-				5B9D1BA61D08603800522058 /* BillOrSteveTests */,
-				5B9D1BB11D08603800522058 /* BillOrSteveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,20 +156,6 @@
 				5B9D1BA11D08603800522058 /* LaunchScreen.storyboard in Resources */,
 				5B9D1B9E1D08603800522058 /* Assets.xcassets in Resources */,
 				5B9D1B9C1D08603800522058 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B9D1BA51D08603800522058 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B9D1BB01D08603800522058 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,81 +207,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C0FFE01ED911EC2666B2B506 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C45D0DBBBE72DCF1A6DEB596 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillOrSteveUITests/Pods-BillOrSteveUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CAA1219639288EA1DBF905DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillOrSteveTests/Pods-BillOrSteveTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E41EE1550351015F8009E48F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillOrSteveTests/Pods-BillOrSteveTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9E7EFC447FE1CA693674AFF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,36 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B9D1BA31D08603800522058 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B9D1BAC1D08603800522058 /* BillOrSteveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B9D1BAE1D08603800522058 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B9D1BB71D08603800522058 /* BillOrSteveUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B9D1BA91D08603800522058 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B9D1B921D08603800522058 /* BillOrSteve */;
-			targetProxy = 5B9D1BA81D08603800522058 /* PBXContainerItemProxy */;
-		};
-		5B9D1BB41D08603800522058 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B9D1B921D08603800522058 /* BillOrSteve */;
-			targetProxy = 5B9D1BB31D08603800522058 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B9D1B9A1D08603800522058 /* Main.storyboard */ = {
@@ -590,56 +348,6 @@
 			};
 			name = Release;
 		};
-		5B9D1BBF1D08603800522058 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 600098413AF96B24C5D40395 /* Pods-BillOrSteveTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BillOrSteveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillOrSteve.app/BillOrSteve";
-			};
-			name = Debug;
-		};
-		5B9D1BC01D08603800522058 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4F4947EE0885C6640C1FE72 /* Pods-BillOrSteveTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BillOrSteveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillOrSteve.app/BillOrSteve";
-			};
-			name = Release;
-		};
-		5B9D1BC21D08603800522058 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8967D3ED74906ACA5A191DEC /* Pods-BillOrSteveUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = BillOrSteveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BillOrSteve;
-			};
-			name = Debug;
-		};
-		5B9D1BC31D08603800522058 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 674CEF2507BC655C4E2DE9AD /* Pods-BillOrSteveUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = BillOrSteveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BillOrSteve;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -657,24 +365,6 @@
 			buildConfigurations = (
 				5B9D1BBC1D08603800522058 /* Debug */,
 				5B9D1BBD1D08603800522058 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B9D1BBE1D08603800522058 /* Build configuration list for PBXNativeTarget "BillOrSteveTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B9D1BBF1D08603800522058 /* Debug */,
-				5B9D1BC01D08603800522058 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B9D1BC11D08603800522058 /* Build configuration list for PBXNativeTarget "BillOrSteveUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B9D1BC21D08603800522058 /* Debug */,
-				5B9D1BC31D08603800522058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
