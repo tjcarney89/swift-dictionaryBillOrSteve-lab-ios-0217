@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
 There are two methods already filled out for you:
 
-`randomNumberFromZeroTo()` takes an `Int` as a parameter and returns a random `Int` between 0 and the parameter you passed it. You will probably find this useful when grabbing a random fact to show to the user.
+`randomNumberFromZeroTo(_:)` takes an `Int` as a parameter and returns a random `Int` between 0 and the parameter you passed it. You will probably find this useful when grabbing a random fact to show to the user.
 
 `randomPerson()` will return a `String` with a random name: either "Bill Gates" or "Steve Jobs". You can use this to randomly select which person to show a fact for.
 
@@ -68,6 +68,50 @@ These methods aren't much, but they should prove useful in implementing this app
 ### Instance Variables
 
 First things first: You should probably create an _instance variable_ to store your random facts. You're storing 4-5 facts for two different people, Bill and Steve. What type of variable do you think you should create?
+
+**Quick break from the lesson to explain an instance variable here:**
+
+First, what is an instance variable? Notice how we're writing our various methods within the `ViewController.swift` file. When selecting this file, you will see the following piece of code on line 11:
+
+```swift
+class ViewController: UIViewController {
+```
+
+The closing brace `}` is on line 39. Everything in between these curl braces (beginning on line 11 and ending on line 39) represents the functionality and variables associated with this `ViewController` class. Think of the `ViewController` class as a person and everything that falls in between the curly braces (beginning on line 11 and ending on line 39) relates to _things_ this person can do or _attributes_ associated with this person. As in.. a person might be able to eat, sleep (functions) but they also have a name, hair color, favorite artist (attributes or properties). The name, hair color and favorite artist of a person in code are considered Instance Variables. This is a very brief overview of what instance variables are and how they relate to classes. This will be covered in much more detail in the coming lessons. 
+
+```swift
+class Person {
+    
+    func eat() {
+        print("Eat all the things.")
+    }
+    
+    func dance() {
+        print("Put on some Michael Jackson and dance")
+    }
+
+}
+```
+
+If I asked you to add an instance variable to this Person class, in particular an instance variable that represents the persons name, you would declare a variable right below where you wrote the `class Person` like so:
+
+```swift
+class Person {
+    
+    var name: String
+    
+    func eat() {
+        print("Eat all the things.")
+    }
+    
+    func dance() {
+        print("Put on some Michael Jackson and dance")
+    }
+
+}
+```
+
+**Back to the lesson now**:
 
 A `Dictionary` would make sense. Since Bill and Steve are identified using `String`s from the `randomPerson()` method, it would make sense to have a dictionary with `String` keys. And since they are mapped to a set of facts, it would make sense for the values to be of type `[String]`. Therefore, you should create an instance variable of type `[String: [String]]`.
 
@@ -93,9 +137,19 @@ Go ahead and populate that dictionary in `createFacts()`.
 
 ### Methods
 
-Finally, you should create a method called `getRandomFact()`. This method should return a tuple consisting of the fact and who it pertains to. Since you will have to check to see if the proper keys have been created, you will also have to handle the case in which the keys are not present in the dictionary. (This is a _bug_, but you should still handle that case.) This means that the return value of `getRandomFact()` should probably be an `Optional` tuple.
+Finally, you should create a method called `getRandomFact()`. This method should return a tuple consisting of the fact and who it pertains to. This means that the return value of `getRandomFact()` should be a tuple (`String`, `String`) To help you out, we will provide the method signature here, it's your job to implement it:
+
+```swift
+    func getRandomFact() -> (String, String) {
+        
+        // implement your function here
+        
+    }
+```
 
 Implementing this method takes a bit of thought, but you have the plumbing in place to create this method. First of all, you already have the method `randomPerson()` which will return either the `String` "Bill Gates" or "Steve Jobs", which also correspond to keys in your dictionary. You also have the method `randomNumberFromZeroTo()`, which will return a random number between 0 and the argument you pass to it. You can use these two methods to randomly select a key from the dictionary of facts, then randomly select a fact from the array associated with that key.
+
+
 
 Now it's time to write up the UI.
 

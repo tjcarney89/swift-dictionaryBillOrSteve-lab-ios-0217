@@ -9,15 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Create your instance variables here
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
     }
 
     func randomNumberFromZeroTo(number: Int) -> Int {
+        
         return Int(arc4random_uniform(UInt32(number)))
+        
     }
     
     func randomPerson() -> String {
+        
         let randomNumber = arc4random_uniform(2)
         
         if randomNumber == 0 {
@@ -25,5 +34,7 @@ class ViewController: UIViewController {
         } else {
             return "Bill Gates"
         }
+        
     }
+    
 }
