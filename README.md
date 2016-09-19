@@ -35,12 +35,16 @@ The crux of this application will be contained in `ViewController` (in the `View
 
 ```swift
 class ViewController: UIViewController {
+    
+    // Create your stored property here
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    func randomNumberFromZeroTo(number: Int) -> Int {
-        return Int(arc4random_uniform(UInt32(number)))
+    
+    // Helper Functions
+    func randomIndex(fromArray array: [String]) -> Int {
+        return Int(arc4random_uniform(UInt32(array.count)))
     }
     
     func randomPerson() -> String {
@@ -52,32 +56,31 @@ class ViewController: UIViewController {
             return "Bill Gates"
         }
     }
+    
 }
 ```
 
 There are two methods already filled out for you:
 
-`randomNumberFromZeroTo(_:)` takes an `Int` as a parameter and returns a random `Int` between 0 and the parameter you passed it. You will probably find this useful when grabbing a random fact to show to the user.
+`randomIndex(fromArray:)` takes a [`String`] as a parameter and returns a random `Int`, the min being 0 and the max being the last index of the array. You will probably find this useful when grabbing a random fact to show to the user.
 
 `randomPerson()` will return a `String` with a random name: either "Bill Gates" or "Steve Jobs". You can use this to randomly select which person to show a fact for.
 
-There is also a partially implemented `viewDidLoad()` method which, for now, calls `super.viewDidLoad()`. You'll probably need to add some code to the end of this method to initialize your app.
-
 These methods aren't much, but they should prove useful in implementing this app. The rest, however, is up to you to fill out.
 
-### Instance Variables
+### Stored Properties
 
-First things first: You should probably create an _instance variable_ to store your random facts. You're storing 4-5 facts for two different people, Bill and Steve. What type of variable do you think you should create?
+First things first: You should probably create a _stored property_ to store your random facts. You're storing 4-5 facts for two different people, Bill and Steve. What type of variable do you think you should create?
 
-**Quick break from the lesson to explain an instance variable here:**
+**Quick break from the lesson to explain a stored property is here:**
 
-First, what is an instance variable? Notice how we're writing our various methods within the `ViewController.swift` file. When selecting this file, you will see the following piece of code on line 11:
+First, what is a stored property? Notice how we're writing our various methods within the `ViewController.swift` file. When selecting this file, you will see the following piece of code on line 11:
 
 ```swift
 class ViewController: UIViewController {
 ```
 
-The closing brace `}` is on line 39. Everything in between these curl braces (beginning on line 11 and ending on line 39) represents the functionality and variables associated with this `ViewController` class. Think of the `ViewController` class as a person and everything that falls in between the curly braces (beginning on line 11 and ending on line 39) relates to _things_ this person can do or _attributes_ associated with this person. As in.. a person might be able to eat, sleep (functions) but they also have a name, hair color, favorite artist (attributes or properties). The name, hair color and favorite artist of a person in code are considered Instance Variables. This is a very brief overview of what instance variables are and how they relate to classes. This will be covered in much more detail in the coming lessons. 
+The closing brace `}` is on line 39. Everything in between these curly braces (beginning on line 11 and ending on line 39) represents the functionality and variables associated with this `ViewController` class. Think of the `ViewController` class as a person and everything that falls in between the curly braces (beginning on line 11 and ending on line 39) relates to _things_ this person can do or _attributes_ associated with this person. As in.. a person might be able to eat, sleep (functions) but they also have a name, hair color, favorite artist (attributes or properties). The name, hair color and favorite artist of a person in code are considered stored properties. This is a very brief overview of what stored properties are and how they relate to classes. This will be covered in much more detail in the coming lessons. 
 
 ```swift
 class Person {
@@ -93,7 +96,7 @@ class Person {
 }
 ```
 
-If I asked you to add an instance variable to this Person class, in particular an instance variable that represents the persons name, you would declare a variable right below where you wrote the `class Person` like so:
+If I asked you to add a stored property to this Person class, in particular a stored property that represents the persons name, you would declare a variable right below where you wrote the `class Person {` like so:
 
 ```swift
 class Person {
@@ -102,22 +105,47 @@ class Person {
     
     func eat() {
         print("Eat all the things.")
+        print("My name is \(name)")
     }
     
     func dance() {
         print("Put on some Michael Jackson and dance")
+        print("My name is \(name)")
+
     }
 
 }
 ```
 
+`name` here is a stored property. It can be either a variable or constant and it is accessible within all of the functions associated with this class. We can refer to name in the `eat()` function, and the `dance()` function (just like real life). 
+
 **Back to the lesson now**:
 
-A `Dictionary` would make sense. Since Bill and Steve are identified using `String`s from the `randomPerson()` method, it would make sense to have a dictionary with `String` keys. And since they are mapped to a set of facts, it would make sense for the values to be of type `[String]`. Therefore, you should create an instance variable of type `[String: [String]]`.
+A `Dictionary` would make sense. Since Bill and Steve are identified using `String`s from the `randomPerson()` method, it would make sense to have a dictionary with `String` keys. And since they are mapped to a set of facts, it would make sense for the values to be of type `[String]`. Therefore, you should create a stored property of type `[String: [String]]`, it should be a variable and not a constant.
 
-You can declare this variable outside of the `viewDidLoad()` method, right above it.
+You can declare this variable right above the `viewDidLoad()` method, we want to write clean code.
 
 Next you should populate the dictionary with facts. For the sake of organization, create another method called `createFacts()` to do this, and then call `createFacts()` at the end of `viewDidLoad()`. Remember, the dictionary instance variable you created to store the facts should probably have two keys, "Bill Gates" and "Steve Jobs", which correspond to the strings returned by `randomPerson()`. Each key should be assigned an array containing the facts about each person.
+
+Here's a hint as to what this prior paragraph is asking you to do:
+
+```swift
+    // Create your stored property here
+    var billAndSteveFacts: [String : [String]] = [:]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createFacts()
+    }
+    
+    func createFacts() {
+        let billFacts = ["Cheese", "More Cheese"]
+        let steveFacts = ["No Cheese", "Milk"]
+        
+        billAndSteveFacts["Bill Gates"] = billFacts
+        billAndSteveFacts["Steve Jobs"] = steveFacts
+    }
+```
 
 Here are the facts you can use:
 
@@ -147,7 +175,7 @@ Finally, you should create a method called `getRandomFact()`. This method should
     }
 ```
 
-Implementing this method takes a bit of thought, but you have the plumbing in place to create this method. First of all, you already have the method `randomPerson()` which will return either the `String` "Bill Gates" or "Steve Jobs", which also correspond to keys in your dictionary. You also have the method `randomNumberFromZeroTo()`, which will return a random number between 0 and the argument you pass to it. You can use these two methods to randomly select a key from the dictionary of facts, then randomly select a fact from the array associated with that key.
+Implementing this method takes a bit of thought, but you have the plumbing in place to create this method. First of all, you already have the method `randomPerson()` which will return either the `String` "Bill Gates" or "Steve Jobs", which also correspond to keys in your dictionary. You also have the method `randomIndex(fromArray:)`, which will return a random index from the array you pass to it. You can use these two methods to randomly select a key from the dictionary (Bill Gates or Steve Jobs) of facts, then randomly select a fact from the array associated with that key.
 
 
 
@@ -169,11 +197,17 @@ Now you can finish implementing the logic of the game in the view controller.
 
 ## Back to the View Controller
 
-You should next create a method called `showFact()` that will show the first fact. This method is fairly simple: It should get a random fact and person using the method you wrote, then change the text in the middle of the UI to the text of that fact. You'll probably also want to store the current fact and person in an instance variable, so you can later check to see if a correct guess has been made.
+You should next create a method called `showFact()` that will show the first fact. This method is fairly simple: It should get a random fact and person using the method you wrote, then change the text in the middle of the UI to the text of that fact. You'll probably also want to store the person associated with the displayed fact in a stored property, so you can later check to see if a correct guess has been made.
+
+```swift
+    var correctPerson: String = ""
+```
 
 When a user presses a button, your logic should check to see if the button pressed is the correct guess. You should have wired the buttons up to different IB actions, so you'll easily know which one is pressed. You can check to make sure the right person was selected. If the guess is correct, you should increment the counter at the top of the screen. If the guess was incorrect, don't increment the counter!
 
 Regardless of whether the guess was correct or not, you should then display another fact and let the user play another round. You can easily accomplish this by calling your `showFact()` method again.
+
+
 
 ## Extra Credit
 

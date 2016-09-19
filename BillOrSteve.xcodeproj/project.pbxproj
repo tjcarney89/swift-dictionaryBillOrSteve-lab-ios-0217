@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420C9667B9BFC2A2F54AE083 /* Pods_BillOrSteve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989B91428DBF74DE1EEBC467 /* Pods_BillOrSteve.framework */; };
 		5B9D1B971D08603800522058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1B961D08603800522058 /* AppDelegate.swift */; };
 		5B9D1B991D08603800522058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1B981D08603800522058 /* ViewController.swift */; };
 		5B9D1B9C1D08603800522058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1B9A1D08603800522058 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		148EC2074D65609229DF176B /* Pods-BillOrSteve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteve.release.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve.release.xcconfig"; sourceTree = "<group>"; };
 		5B9D1B931D08603800522058 /* BillOrSteve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillOrSteve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9D1B961D08603800522058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9D1B981D08603800522058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +22,6 @@
 		5B9D1B9D1D08603800522058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9D1BA01D08603800522058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B9D1BA21D08603800522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69352740539C06E694684607 /* Pods-BillOrSteve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillOrSteve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve.debug.xcconfig"; sourceTree = "<group>"; };
-		815491CAEDD86BCF63DE544B /* Pods_BillOrSteveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		989B91428DBF74DE1EEBC467 /* Pods_BillOrSteve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC71DEE53190580DFB32CE51 /* Pods_BillOrSteveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillOrSteveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420C9667B9BFC2A2F54AE083 /* Pods_BillOrSteve.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +40,6 @@
 			children = (
 				5B9D1B951D08603800522058 /* BillOrSteve */,
 				5B9D1B941D08603800522058 /* Products */,
-				77E2848B1AEE2BAD66147F60 /* Pods */,
 				8AF31A81B86B907536D23584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -73,21 +65,9 @@
 			path = BillOrSteve;
 			sourceTree = "<group>";
 		};
-		77E2848B1AEE2BAD66147F60 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				69352740539C06E694684607 /* Pods-BillOrSteve.debug.xcconfig */,
-				148EC2074D65609229DF176B /* Pods-BillOrSteve.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		8AF31A81B86B907536D23584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				989B91428DBF74DE1EEBC467 /* Pods_BillOrSteve.framework */,
-				815491CAEDD86BCF63DE544B /* Pods_BillOrSteveTests.framework */,
-				EC71DEE53190580DFB32CE51 /* Pods_BillOrSteveUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,12 +79,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9D1BBB1D08603800522058 /* Build configuration list for PBXNativeTarget "BillOrSteve" */;
 			buildPhases = (
-				B09F28E9B01B661F13EE9849 /* [CP] Check Pods Manifest.lock */,
 				5B9D1B8F1D08603800522058 /* Sources */,
 				5B9D1B901D08603800522058 /* Frameworks */,
 				5B9D1B911D08603800522058 /* Resources */,
-				1ADE82C9A10C1866B5CD1102 /* [CP] Embed Pods Frameworks */,
-				351B4F5E000427A5127C195A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +104,7 @@
 				TargetAttributes = {
 					5B9D1B921D08603800522058 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -160,54 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1ADE82C9A10C1866B5CD1102 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		351B4F5E000427A5127C195A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BillOrSteve/Pods-BillOrSteve-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B09F28E9B01B661F13EE9849 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B9D1B8F1D08603800522058 /* Sources */ = {
@@ -326,25 +256,25 @@
 		};
 		5B9D1BBC1D08603800522058 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69352740539C06E694684607 /* Pods-BillOrSteve.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BillOrSteve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5B9D1BBD1D08603800522058 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 148EC2074D65609229DF176B /* Pods-BillOrSteve.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BillOrSteve/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.BillOrSteve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
